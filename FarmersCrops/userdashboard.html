@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Farmers Crops - User Dashboard</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Farmers Crops</h1>
+      <ul>
+        <li><a href="logout.html">Sign Out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="dashboard">
+      <div class="container">
+        <h2>User Dashboard</h2>
+        <div class="crop-list" id="crop-list">
+          <!-- Crop items will be dynamically added here using JavaScript -->
+        </div>
+        <form id="add-crop-form">
+          <h3>Add Crop</h3>
+          <div class="form-group">
+            <label for="crop-name">Crop Name</label>
+            <input type="text" id="crop-name" name="crop-name" required>
+          </div>
+          <div class="form-group">
+            <label for="crop-description">Crop Description</label>
+            <textarea id="crop-description" name="crop-description" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="crop-price">Crop Price ($)</label>
+            <input type="number" id="crop-price" name="crop-price" step="0.01" required>
+          </div>
+          <button type="submit">Add Crop</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Farmers Crops. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

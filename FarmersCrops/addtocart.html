@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Farmers Crops - Add to Cart</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Farmers Crops</h1>
+      <ul>
+        <li><a href="landing.html">Home</a></li>
+        <li><a href="login.html">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="cart">
+      <div class="container">
+        <h2>Add to Cart</h2>
+        <div class="cart-items">
+          <!-- Cart items will be dynamically generated here -->
+        </div>
+        <div class="cart-total">
+          <h3>Cart Total: $0.00</h3>
+          <button id="checkout-btn">Proceed to Checkout</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Farmers Crops. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+    function renderCartItems() {
+      const cartItemsContainer = document.querySelector('.cart-items');
+      cartItemsContainer.innerHTML = '';
+
+      cartItems.forEach((item) => {
+        const cartItemElement = document.createElement('div');
+        cartItemElement.classList.add('cart-item');
+        cartItemElement.innerHTML = `
+          <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+          <div class="cart-item-details">
+            <h4>${item.name}</h4>
+            <p>Price: $${item.price.toFixed(2)}</p>
+            <p>Quantity: ${item.quantity}</p>
+          </div>
+          <button class="remove-item-btn" onclick="removeCartItem(${item.id})">Remove</button>
+        `;
+
+        cartItemsContainer.appendChild(cartItemElement);
+      });
+
+      updateCartTotal();
+    }
+
+    function updateCartTotal() {
+      const cartTotalElement = document.querySelector('.cart-total h3');
+      const cartTotal = cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
+      cartTotalElement.textContent = `Cart Total: $${cartTotal.toFixed(2)}`;
+    }
+
+    function removeCartItem(itemId) {
+      cartItems = cartItems.filter((item) => item.id !== itemId);
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      renderCartItems();
+    }
+
+    renderCartItems();
+  </script>
+</body>
+</html>

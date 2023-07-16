@@ -1,0 +1,391 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 40px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+
+  }
+
+ /* Center the button on the screen */
+a.cta-button {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 150px;
+  }
+  
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  #featured-crops {
+    margin-top: 40px;
+  }
+  
+  .crop-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .crop-item {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .crop-item img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .crop-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .crop-item p {
+    margin-bottom: 20px;
+  }
+  
+  .crop-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .crop-item a:hover {
+    background-color: #0056b3;
+  }
+  
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* styles.css */
+#add-to-cart {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+#add-to-cart:hover {
+    background-color: #0056b3;
+  }
+
+#add-to-cart2 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+#add-to-cart2:hover {
+    background-color: #0056b3;
+  }
+  
+#add-to-cart3 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+#add-to-cart3:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  
+  /* Increase size of search input */
+#search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  /* Increase size of search button */
+  #search-form button {
+    padding: 12px 20px;
+    font-size: 18px;
+  }
+
+
+
+
+
+
+
+/* Style the main section */
+#cart {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.cart-items {
+  margin-bottom: 20px;
+}
+
+.cart-total {
+  margin-top: 20px;
+}
+
+.cart-total h3 {
+  margin: 0;
+}
+
+#checkout-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#checkout-btn:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+  
+
+
+  #login-form {
+    max-width: 300px; /* Adjust the width as desired */
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block;
+    width: 100%;
+    padding: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  input[type="email"],
+  input[type="password"]{
+    width: 90%;
+    padding: 100px;
+    margin-bottom: 10px;
+    border:1px solid #ccc;
+    border-radius: 3px;
+
+  }
+  
+  #login-form .form-group {
+    width:90%;
+    margin-bottom: 20px;
+    border-bottom: 2opx;
+  }
+  
+  #login-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  #login-form input[type="email"],
+  #login-form input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #login-form button[type="submit"] {
+    display: block;
+    width: 97%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  #login-form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  #login-form .form-feedback {
+    color: #f44336;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+  /* Hover effect for form inputs */
+  #login-form input[type="email"]:hover,
+  #login-form input[type="password"]:hover {
+    border-color: #007bff;
+  }
+  
+  /* Focus effect for form inputs */
+  #login-form input[type="email"]:focus,
+  #login-form input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  
+
+
+/* Style the form elements within the signup section */
+#signup {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#signup .form-group {
+  margin-bottom: 15px;
+}
+
+#signup label {
+  display: block;
+  font-weight: bold;
+}
+
+#signup input[type="text"],
+#signup input[type="email"],
+#signup input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#signup button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#signup button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
